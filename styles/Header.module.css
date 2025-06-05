@@ -1,0 +1,98 @@
+/* Header.module.css (final version) */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #d83428;
+  color: white;
+  padding: 15px 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.shopName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: auto; /* Pushes nav and cart to the right */
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease-out;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border: 3px solid transparent;
+  border-radius: 30px;
+}
+
+.nav a:hover {
+  color: #650b0b;
+  border-color: #a00f0f;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.cartContainer {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.cartLink {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cartIcon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.cartCount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #7c0d1b;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 1rem;
+  }
+  
+  .shopName {
+    font-size: 1.2rem;
+  }
+  
+  .nav {
+    gap: 10px;
+  }
+  
+  .nav a {
+    font-size: 0.9rem;
+    padding: 3px 6px;
+  }
+}

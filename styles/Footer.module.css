@@ -1,0 +1,120 @@
+/* styles/Footer.module.css */
+.footer {
+  background-color: #d83428;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footerLink {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: .9rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5px;
+  transition: all 0.5s;
+}
+
+.footerLink:hover {
+  border-radius: 30px;
+  /* background-color: #3f0c08; */
+  padding: 0rem;
+  color: #4a0d08;
+  scale: 1.05;
+  /* border-radius: 30px; */
+}
+
+.paymentSection {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.paymentText {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ffffff;
+  margin-top: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footerLinks {
+    gap: 1rem;
+  }
+  
+  .paymentLogos {
+    gap: 1rem;
+  }
+}
+
+.paymentSection {
+  margin-top: -20px;
+  padding: 20px;
+  background: #d83428;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: -40px;
+}
+
+.paymentText {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.paymentLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.paymentLogo {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff6d;
+  border-radius: 30px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform .4s ease;
+  scale: 1.1;
+}
+
+.paymentLogo:hover {
+  background-color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.paymentLogo svg {
+  width: 100%;
+  height: 100%;
+  max-height: 35px;
+}
