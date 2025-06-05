@@ -10,7 +10,7 @@ Built with the **MERN Stack** (MongoDB, Express.js, React, Node.js) and styled u
 
 > Screenshots of the landing page, product cards, category hover animation, admin panel, and cart page after deploying.
 
-![Home Page](screenshots/homepage.png) |
+![Home Page](screenshots/homepage.png)
 ![Deals](screenshots/deals.png) 
 ![Category](screenshots/category.png) 
 ![Featured Producs](screenshots/fproducts.png) 
